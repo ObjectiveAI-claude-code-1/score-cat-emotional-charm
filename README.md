@@ -31,7 +31,7 @@ The function evaluates cat pictures across three qualities, each handled by a de
 
 ### 1. Emotional Resonance
 
-**Sub-function:** [{{ .Task0 }}](https://github.com/ObjectiveAI-claude-code-1/{{ .Task0 }})
+**Sub-function:** [rank-cat-emotional-resonance](https://github.com/ObjectiveAI-claude-code-1/rank-cat-emotional-resonance)
 
 Evaluates the depth and immediacy of feeling each image is likely to provoke in a viewer. Does the image trigger genuine laughter, tenderness, awe, or warmth — and how powerfully? The specific emotion matters less than its presence and strength. A technically polished image that provokes nothing ranks lower than an imperfect image that captures something deeply felt. This is the non-negotiable foundation: without emotional resonance, a cat picture is just documentation.
 

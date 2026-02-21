@@ -2,25 +2,10 @@
   "type": "vector.function",
   "tasks": [
     {
-      "type": "placeholder.vector.function",
-      "input_schema": {
-        "type": "array",
-        "description": "A collection of cat pictures to rank by emotional resonance.",
-        "minItems": 2,
-        "items": {
-          "type": "image",
-          "description": "A picture of a cat to evaluate for the depth and immediacy of emotional response it provokes."
-        }
-      },
-      "output_length": {
-        "$starlark": "len(input)"
-      },
-      "input_split": {
-        "$starlark": "[[item] for item in input]"
-      },
-      "input_merge": {
-        "$starlark": "[item for sublist in input for item in sublist]"
-      },
+      "type": "vector.function",
+      "owner": "ObjectiveAI-claude-code-1",
+      "repository": "rank-cat-emotional-resonance",
+      "commit": "377a686c3cf2235a80a6f51d046d792d808c896c",
       "skip": null,
       "input": {
         "$starlark": "input"
