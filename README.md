@@ -31,19 +31,19 @@ The function evaluates cat pictures across three qualities, each handled by a de
 
 ### 1. Emotional Resonance
 
-**Sub-function:** [{{ .Task0 }}](https://github.com/{{ .Owner }}/{{ .Task0 }})
+**Sub-function:** [{{ .Task0 }}](https://github.com/ObjectiveAI-claude-code-1/{{ .Task0 }})
 
 Evaluates the depth and immediacy of feeling each image is likely to provoke in a viewer. Does the image trigger genuine laughter, tenderness, awe, or warmth — and how powerfully? The specific emotion matters less than its presence and strength. A technically polished image that provokes nothing ranks lower than an imperfect image that captures something deeply felt. This is the non-negotiable foundation: without emotional resonance, a cat picture is just documentation.
 
 ### 2. Unselfconscious Charm
 
-**Sub-function:** [{{ .Task1 }}](https://github.com/{{ .Owner }}/{{ .Task1 }})
+**Sub-function:** [{{ .Task1 }}](https://github.com/ObjectiveAI-claude-code-1/{{ .Task1 }})
 
 Evaluates whether each image captures a natural, unposed moment of authentic cat behavior. Looks for cats being genuinely themselves — a kitten curled into an impossibly small ball, a cat mid-leap with legs splayed in absurd directions, a cat kneading a blanket in private contentment. The best cat pictures feel like small acts of witnessing rather than staged productions. Images that feel contrived or overly produced rank lower than those that feel honest and spontaneous.
 
 ### 3. Enduring Appeal
 
-**Sub-function:** [{{ .Task2 }}](https://github.com/{{ .Owner }}/{{ .Task2 }})
+**Sub-function:** [cat-pic-lasting-appeal](https://github.com/ObjectiveAI-claude-code-1/cat-pic-lasting-appeal)
 
 Evaluates the staying power that makes a person want to save an image, share it, or come back to it later. Closely tied to universality — the joy of watching a cat discover something new, the comedy of feline indignation, the peace of a cat entirely at rest. A picture with enduring appeal captures one of these universal moments so cleanly that it feels definitive rather than disposable: the kind of image you send to a friend with no context because it speaks for itself.
 

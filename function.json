@@ -1,23 +1,5 @@
 {
   "type": "vector.function",
-  "input_schema": {
-    "type": "array",
-    "description": "A collection of cat pictures to rank by emotional resonance and charm.",
-    "minItems": 2,
-    "items": {
-      "type": "image",
-      "description": "A picture of a cat to evaluate for emotional resonance and charm."
-    }
-  },
-  "output_length": {
-    "$starlark": "len(input)"
-  },
-  "input_split": {
-    "$starlark": "[[item] for item in input]"
-  },
-  "input_merge": {
-    "$starlark": "[item for sublist in input for item in sublist]"
-  },
   "tasks": [
     {
       "type": "placeholder.vector.function",
@@ -76,25 +58,10 @@
       }
     },
     {
-      "type": "placeholder.vector.function",
-      "input_schema": {
-        "type": "array",
-        "description": "A collection of cat pictures to rank by enduring appeal.",
-        "minItems": 2,
-        "items": {
-          "type": "image",
-          "description": "A picture of a cat to evaluate for lasting memorability and shareability."
-        }
-      },
-      "output_length": {
-        "$starlark": "len(input)"
-      },
-      "input_split": {
-        "$starlark": "[[item] for item in input]"
-      },
-      "input_merge": {
-        "$starlark": "[item for sublist in input for item in sublist]"
-      },
+      "type": "vector.function",
+      "owner": "ObjectiveAI-claude-code-1",
+      "repository": "cat-pic-lasting-appeal",
+      "commit": "b48bd2046010a04215a2f1273a577fc6ffdbb63d",
       "skip": null,
       "input": {
         "$starlark": "input"
@@ -104,5 +71,23 @@
       }
     }
   ],
-  "description": "Ranks cat pictures by emotional resonance and charm, evaluating each image across three dimensions — the depth of feeling it provokes, the authenticity of the captured moment, and its enduring shareability — to produce a relative ordering that surfaces the most emotionally compelling images first."
+  "input_split": {
+    "$starlark": "[[item] for item in input]"
+  },
+  "input_merge": {
+    "$starlark": "[item for sublist in input for item in sublist]"
+  },
+  "description": "Ranks cat pictures by emotional resonance and charm, evaluating each image across three dimensions — the depth of feeling it provokes, the authenticity of the captured moment, and its enduring shareability — to produce a relative ordering that surfaces the most emotionally compelling images first.",
+  "input_schema": {
+    "type": "array",
+    "description": "A collection of cat pictures to rank by emotional resonance and charm.",
+    "minItems": 2,
+    "items": {
+      "type": "image",
+      "description": "A picture of a cat to evaluate for emotional resonance and charm."
+    }
+  },
+  "output_length": {
+    "$starlark": "len(input)"
+  }
 }
