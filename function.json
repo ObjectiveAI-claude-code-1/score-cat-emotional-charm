@@ -1,0 +1,108 @@
+{
+  "type": "vector.function",
+  "input_schema": {
+    "type": "array",
+    "description": "A collection of cat pictures to rank by emotional resonance and charm.",
+    "minItems": 2,
+    "items": {
+      "type": "image",
+      "description": "A picture of a cat to evaluate for emotional resonance and charm."
+    }
+  },
+  "output_length": {
+    "$starlark": "len(input)"
+  },
+  "input_split": {
+    "$starlark": "[[item] for item in input]"
+  },
+  "input_merge": {
+    "$starlark": "[item for sublist in input for item in sublist]"
+  },
+  "tasks": [
+    {
+      "type": "placeholder.vector.function",
+      "input_schema": {
+        "type": "array",
+        "description": "A collection of cat pictures to rank by emotional resonance.",
+        "minItems": 2,
+        "items": {
+          "type": "image",
+          "description": "A picture of a cat to evaluate for the depth and immediacy of emotional response it provokes."
+        }
+      },
+      "output_length": {
+        "$starlark": "len(input)"
+      },
+      "input_split": {
+        "$starlark": "[[item] for item in input]"
+      },
+      "input_merge": {
+        "$starlark": "[item for sublist in input for item in sublist]"
+      },
+      "skip": null,
+      "input": {
+        "$starlark": "input"
+      },
+      "output": {
+        "$starlark": "output"
+      }
+    },
+    {
+      "type": "placeholder.vector.function",
+      "input_schema": {
+        "type": "array",
+        "description": "A collection of cat pictures to rank by unselfconscious charm.",
+        "minItems": 2,
+        "items": {
+          "type": "image",
+          "description": "A picture of a cat to evaluate for the naturalness and authenticity of the captured moment."
+        }
+      },
+      "output_length": {
+        "$starlark": "len(input)"
+      },
+      "input_split": {
+        "$starlark": "[[item] for item in input]"
+      },
+      "input_merge": {
+        "$starlark": "[item for sublist in input for item in sublist]"
+      },
+      "skip": null,
+      "input": {
+        "$starlark": "input"
+      },
+      "output": {
+        "$starlark": "output"
+      }
+    },
+    {
+      "type": "placeholder.vector.function",
+      "input_schema": {
+        "type": "array",
+        "description": "A collection of cat pictures to rank by enduring appeal.",
+        "minItems": 2,
+        "items": {
+          "type": "image",
+          "description": "A picture of a cat to evaluate for lasting memorability and shareability."
+        }
+      },
+      "output_length": {
+        "$starlark": "len(input)"
+      },
+      "input_split": {
+        "$starlark": "[[item] for item in input]"
+      },
+      "input_merge": {
+        "$starlark": "[item for sublist in input for item in sublist]"
+      },
+      "skip": null,
+      "input": {
+        "$starlark": "input"
+      },
+      "output": {
+        "$starlark": "output"
+      }
+    }
+  ],
+  "description": "Ranks cat pictures by emotional resonance and charm, evaluating each image across three dimensions — the depth of feeling it provokes, the authenticity of the captured moment, and its enduring shareability — to produce a relative ordering that surfaces the most emotionally compelling images first."
+}
